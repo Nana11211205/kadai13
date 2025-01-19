@@ -57,6 +57,9 @@
     .top-wrapper p {
       font-size: 18px;
     }
+    .btn-wrapper {
+      margin-top: 20px;
+    }
     .lesson-wrapper {
       padding: 50px 0;
       background-color: #fff;
@@ -104,13 +107,45 @@
       padding: 20px 0;
       text-align: center;
     }
+    .about-wrapper, .team-wrapper, .contact-wrapper {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .about-wrapper h2, .team-wrapper h2, .contact-wrapper h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .about-wrapper p, .team-wrapper p, .contact-wrapper p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .team-members {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+    .team-member {
+      width: 25%;
+      text-align: center;
+    }
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .team-member h3 {
+      font-size: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header-left">
-        <!-- 左側の内容 -->
+        <!-- ロゴなどの内容 -->
       </div>
       <span class="fa fa-bars menu-icon"></span>
       <div class="header-right">
@@ -123,10 +158,10 @@
 
   <div class="top-wrapper">
     <div class="container">
-      <h1>タイトル<br>副題</h1>
-      <p>本文<br>次の行<br>その次の行</p>
+      <h1>プロゲートの学習コンテンツ</h1>
+      <p>学習の第一歩を踏み出すためのガイドライン。あなたのスキルアップをサポートします。</p>
       <div class="btn-wrapper">
-        <!-- ボタンなどの内容 -->
+        <button class="btn">学習を始める</button>
       </div>
     </div>
   </div>
@@ -134,7 +169,7 @@
   <div class="lesson-wrapper">
     <div class="container">
       <div class="heading">
-        <h2>小見出し</h2>
+        <h2>学習内容</h2>
       </div>
       <div class="lessons">
         <div class="lesson">
@@ -166,7 +201,47 @@
           <p class="text-contents">青色</p>
         </div>
       </div>
-      <div class="clear"></div>
+    </div>
+  </div>
+
+  <div class="about-wrapper">
+    <div class="container">
+      <h2>私たちについて</h2>
+      <p>このサイトは学習支援を目的として作成されました。初心者でも分かりやすく、ステップバイステップで進めるカリキュラムを提供します。</p>
+      <p>プログラミングを始めたい方、学びたい方に最適なリソースを提供しています。</p>
+    </div>
+  </div>
+
+  <div class="team-wrapper">
+    <div class="container">
+      <h2>チーム</h2>
+      <p>私たちは、教育を通じて新しい可能性を広げようとしています。</p>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="チームメンバー1の画像URL" alt="チームメンバー1">
+          <h3>佐藤太郎</h3>
+          <p>リーダー兼開発者</p>
+        </div>
+        <div class="team-member">
+          <img src="チームメンバー2の画像URL" alt="チームメンバー2">
+          <h3>鈴木花子</h3>
+          <p>デザイナー</p>
+        </div>
+        <div class="team-member">
+          <img src="チームメンバー3の画像URL" alt="チームメンバー3">
+          <h3>田中一郎</h3>
+          <p>マーケティング担当</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-wrapper">
+    <div class="container">
+      <h2>お問い合わせ</h2>
+      <p>ご質問があれば、お気軽にご連絡ください。</p>
+      <p>Email: example@example.com</p>
+      <p>電話番号: 123-456-7890</p>
     </div>
   </div>
 
@@ -176,14 +251,5 @@
         <h2>最後の大きめのメッセージ</h2>
         <h3>サブメッセージ</h3>
       </div>
-      <button class="btn message">本文1</button>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <p>あ</p>
-    </div>
-  </footer>
-</body>
-</html>
+      <button class="btn message">お知らせ1</button>
+   
