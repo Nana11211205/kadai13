@@ -14,7 +14,7 @@
       justify-content: space-between;  /*文字と文字の間に空白*/
       padding: 10px 20px; /* 要素の内側に余白を設定 */
       background-color: #ffb6c1;/*背景色の指定*/
-      color: #fffdd0;/*ヘッダーの文字の色*/
+      color: #ffffff;/*ヘッダーの文字の色*/
     }
     header h2 {
       margin: 0;/*余白の削除*/
@@ -25,20 +25,20 @@
       gap: 15px;/*要素間の余白*/
     }
     .header-right a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      transition: color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;/*デフォのリンクの下線を消す*/
+      color: #ffffff; /* ヘッダーロゴと文字の色 */
+      font-size: 18px;/* ヘッダーロゴと文字の字の大きさ */
+      display: flex;/*レイアウトの調整用のツール(?)*/
+      align-items: center;/* ヘッダーロゴ中央揃え */
+      gap: 5px;/*要素間の余白*/
+      transition: color 1.0s ease, transform 1.0s ease;/*文字動く（パクリ）*/
     }
-    .header-right a:hover {
-      color: #00aced;
-      transform: scale(1.1);
+    .header-right a:hover {/*カーソルを合わせたら色と文字のサイズ変化*/
+      color: #ff07ff;/* 色 */
+      transform: scale(1.1);/* 文字の拡大110% */
     }
-    .header-right a .fa {
-      font-size: 20px;
+    /* .header-right a .fa { faはアイコンのライブラリのクラス名 */
+      /* font-size: 20px; */
     }
   </style>
 </head>
