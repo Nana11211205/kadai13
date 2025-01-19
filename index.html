@@ -1,16 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progate</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .header-left, .header-right {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .header-left {
+      float: left;
+    }
+    .header-right {
+      float: right;
+    }
+    .header-right a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .header-right a:hover {
+      text-decoration: underline;
+    }
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+    }
+    .top-wrapper {
+      background-color: #ddd;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .top-wrapper h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .top-wrapper p {
+      font-size: 18px;
+    }
+    .lesson-wrapper {
+      padding: 50px 0;
+      background-color: #fff;
+    }
+    .lesson-wrapper h2 {
+      font-size: 28px;
+      text-align: center;
+    }
+    .lessons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+    .lesson {
+      width: 20%;
+      text-align: center;
+    }
+    .lesson-icon img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .message-wrapper {
+      background-color: #333;
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+    .message-wrapper .btn {
+      background-color: #ff6347;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .message-wrapper .btn:hover {
+      background-color: #e55347;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="header-left">
+        <!-- 左側の内容 -->
       </div>
       <span class="fa fa-bars menu-icon"></span>
       <div class="header-right">
@@ -20,14 +120,17 @@
       </div>
     </div>
   </header>
+
   <div class="top-wrapper">
     <div class="container">
       <h1>タイトル<br>副題</h1>
       <p>本文<br>次の行<br>その次の行</p>
       <div class="btn-wrapper">
+        <!-- ボタンなどの内容 -->
       </div>
     </div>
   </div>
+
   <div class="lesson-wrapper">
     <div class="container">
       <div class="heading">
@@ -36,28 +139,28 @@
       <div class="lessons">
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像１">
+            <img src="画像1のURL" alt="画像1">
             <p>(1)</p>
           </div>
           <p class="text-contents">緑色</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像２">
+            <img src="画像2のURL" alt="画像2">
             <p>(2)</p>
           </div>
           <p class="text-contents">黄色</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像３">
+            <img src="画像3のURL" alt="画像3">
             <p>(3)</p>
           </div>
           <p class="text-contents">赤色</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
-            <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像４">
+            <img src="画像4のURL" alt="画像4">
             <p>(4)</p>
           </div>
           <p class="text-contents">青色</p>
@@ -66,18 +169,19 @@
       <div class="clear"></div>
     </div>
   </div>
+
   <div class="message-wrapper">
     <div class="container">
       <div class="heading">
         <h2>最後の大きめのメッセージ</h2>
         <h3>サブメッセージ</h3>
       </div>
-      <span class="btn message">本文1</span>
+      <button class="btn message">本文1</button>
     </div>
   </div>
+
   <footer>
     <div class="container">
-      
       <p>あ</p>
     </div>
   </footer>
