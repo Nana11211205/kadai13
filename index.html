@@ -1,83 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>SNS</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Progate</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Comic Sans MS,Georgia;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffb6c1;
+      color: #fffdd0;<!--ヘッダー部分の文字の色-->
+    }
+    header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .header-right {
+      display: flex;
+      gap: 15px;
+    }
+    .header-right a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .header-right a:hover {
+      color: #00aced;
+      transform: scale(1.1);
+    }
+    .header-right a .fa {
+      font-size: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="header-left">
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="https://www.waseda.jp/top/">不要</a>
-        <a href="https://my.waseda.jp/login/login">不要２</a>
-        <a href="https://chatgpt.com/" class="login">不要３</a>
-      </div>
+    <h2>Débutant en HTML</h2>
+    <div class="header-right">
+      <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+      <a href="#"><i class="fa fa-twitter"></i>Twitter</a>
+      <a href="#"><i class="fa fa-facebook"></i>Facebook</a>
     </div>
   </header>
+
   <div class="top-wrapper">
     <div class="container">
-      <h1>タイトル<br>副題</h1>
+      <h1>
+        <div style="border: 4px dotted #ffb6c1; padding: 20px;">ここに本文を入れます♪</div>
+        <br>副題
+      </h1>
       <p>本文<br>次の行<br>その次の行</p>
-      <div class="btn-wrapper">
-      </div>
     </div>
   </div>
+
   <div class="lesson-wrapper">
     <div class="container">
-      <div class="heading">
-        <h2>小見出し</h2>
-      </div>
+      <h2>小見出し</h2>
       <div class="lessons">
         <div class="lesson">
           <div class="lesson-icon">
             <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像１">
             <p>(1)</p>
           </div>
-          <p class="text-contents">緑色</p>
+          <p class="text-contents" style="background: #fff; border: 1px #ccc solid; box-shadow: 0 2px 3px 0 #ddd; padding: 20px;">ここに本文を入れます♪</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
             <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像２">
             <p>(2)</p>
           </div>
-          <p class="text-contents">黄色</p>
+          <p class="text-contents" style="background: #fff; border: 1px #ccc solid; box-shadow: 0 2px 3px 0 #ddd; padding: 20px;">ここに本文を入れます♪</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
             <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像３">
             <p>(3)</p>
           </div>
-          <p class="text-contents">赤色</p>
+          <p class="text-contents" style="background: #fff; border: 1px #ccc solid; box-shadow: 0 2px 3px 0 #ddd; padding: 20px;">ここに本文を入れます♪</p>
         </div>
         <div class="lesson">
           <div class="lesson-icon">
             <img src="＠＠＠＠＠＠＠＠＠＠＠＠＠画像４">
             <p>(4)</p>
           </div>
-          <p class="text-contents">青色</p>
+          <p class="text-contents" style="background: #fff; border: 1px #ccc solid; box-shadow: 0 2px 3px 0 #ddd; padding: 20px;">ここに本文を入れます♪</p>
         </div>
       </div>
-      <div class="clear"></div>
     </div>
   </div>
+
   <div class="message-wrapper">
     <div class="container">
-      <div class="heading">
-        <h2>最後の大きめのメッセージ</h2>
-        <h3>サブメッセージ</h3>
-      </div>
+      <h2>最後の大きめのメッセージ</h2>
+      <h3>サブメッセージ</h3>
       <span class="btn message">本文1</span>
     </div>
   </div>
+
   <footer>
     <div class="container">
-      
       <p>あ</p>
     </div>
   </footer>
